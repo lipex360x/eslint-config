@@ -8,9 +8,13 @@ Usage
 * package.json
 
 ```json
+"scripts": {
+  "lint": "npx eslint src --ext .ts,.tsx --fix"
+},
+
 "eslintConfig": {
-    "extends": [
-      "@lipex360-ui/eslint-config"
-    ]
-  }
+  "extends": [
+    "@lipex360-ui/eslint-config"
+  ]
+}
 ```
