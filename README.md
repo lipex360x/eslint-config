@@ -1,7 +1,7 @@
 Usage
 
 * Package Install
-> yarn add -D @lipex360-ui/eslint-config
+> yarn add -D eslint @lipex360-ui/eslint-config
 
 <br />
 
