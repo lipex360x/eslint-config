@@ -18,6 +18,7 @@ module.exports = {
   rules: {
     'no-undef': 'off',
     'no-useless-constructor': 'off',
+    '@typescript-eslint/consistent-type-imports': 'error',
     'import-helpers/order-imports': [
       'error',
       {
