@@ -11,9 +11,16 @@ module.exports = {
     sourceType: 'module',
   },
 
-  plugins: ['@typescript-eslint', 'eslint-plugin-import-helpers'],
+  plugins: [
+    '@typescript-eslint',
+    'eslint-plugin-import-helpers'
+  ],
 
-  extends: ['standard', 'plugin:prettier/recommended'],
+  extends: [
+    'standard', 
+    'plugin:prettier/recommended',
+    'plugin:react-hooks/recommended',
+  ],
 
   rules: {
     'no-undef': 'off',
