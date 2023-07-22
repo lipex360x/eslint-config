@@ -9,7 +9,7 @@ Usage
 
 ```json
 "scripts": {
-  "lint": "npx eslint src --ext .ts,.tsx --fix"
+  "lint": "npx eslint . --ext .ts,.tsx --fix"
 },
 
 "eslintConfig": {
