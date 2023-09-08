@@ -17,7 +17,7 @@ file: `package.json`
 ```
 <br />
 
-#### Commit Lint
+#### Commit Lint - [Docs](https://www.conventionalcommits.org/en/v1.0.0/#summary)
 > yarn add -D  @commitlint/{cli,config-conventional}
 
 > echo "module.exports = { extends: ['@commitlint/config-conventional'] }" > commitlint.config.js
