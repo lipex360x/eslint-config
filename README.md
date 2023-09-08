@@ -15,6 +15,7 @@ file: `package.json`
     "@lipex360-ui/eslint-config"
   ]
 }
+
 ```
 <br />
 
@@ -38,15 +39,18 @@ file: `package.json`
 
 > yarn add -D lint-staged
 
-> npx husky add .husky/pre-commit "npx lint-staged"
-```bash
-echo "module.exports = {"  > .lintstagedrc.js
-echo "  '*.{js,jsx,ts,tsx,json,css,html}': ['prettier --write']," >> .lintstagedrc.js
-echo "  '*.{js,ts,tsx}': ["  >> .lintstagedrc.js
-echo "    'eslint --fix'," >> .lintstagedrc.js
-echo "    // 'jest --bail --findRelatedTests --passWithNoTests'," >> .lintstagedrc.js
-echo "  ]," >> .lintstagedrc.js
-echo "  '**/*.ts': () => 'yarn typecheck'," >> .lintstagedrc.js
-echo "};" >> .lintstagedrc.js
+> npx husky add .husky/pre-commit "npx lint-staged" && code .lintstagedrc.js
+
+file: `.lintstagedrc.js`
+```js
+module.exports = {
+  '*.{js,jsx,ts,tsx,json,css,html}': ['prettier --write'],
+  '*.{js,ts,tsx}': [
+    'eslint --fix',
+    // 'jest --bail --findRelatedTests --passWithNoTests',
+  ],
+  '**/*.ts': () => 'yarn typecheck',
+};
+
 ```
 
