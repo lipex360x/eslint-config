@@ -25,10 +25,18 @@ file: `package.json`
 <br />
 
 * Husky
-> yarn add husky --dev
+> yarn add -D husky
 
 > yarn husky install
 
 > npx husky add .husky/commit-msg  'npx --no -- commitlint --edit ${1}'
 
+<br />
 
+* Lint staged
+
+> yarn add -D lint-staged
+
+> npx husky add .husky/pre-commit "npx lint-staged"
+
+> echo "teste" > .lintstagedrc.js
