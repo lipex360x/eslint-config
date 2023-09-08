@@ -1,6 +1,4 @@
-### Packages Install
-
-* ESLint
+#### ESLint
 > yarn add -D eslint @lipex360-ui/eslint-config
 
 file: `package.json`
@@ -19,14 +17,14 @@ file: `package.json`
 ```
 <br />
 
-* Commit Lint
+#### Commit Lint
 > yarn add -D  @commitlint/{cli,config-conventional}
 
 > echo "module.exports = { extends: ['@commitlint/config-conventional'] }" > commitlint.config.js
 
 <br />
 
-* Husky
+#### Husky
 > yarn add -D husky
 
 > yarn husky install
@@ -35,7 +33,7 @@ file: `package.json`
 
 <br />
 
-* Lint staged
+#### Lint staged
 
 > yarn add -D lint-staged
 
