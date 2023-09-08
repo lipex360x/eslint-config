@@ -1,12 +1,9 @@
-Usage
+### Packages Install
 
-* Package Install
+* ESLint
 > yarn add -D eslint @lipex360-ui/eslint-config
 
-<br />
-
-* package.json
-
+file: `package.json`
 ```json
 "scripts": {
   "lint": "npx eslint . --ext .ts,.tsx --fix"
@@ -18,3 +15,20 @@ Usage
   ]
 }
 ```
+<br />
+
+* Commit Lint
+> yarn add -D  @commitlint/{cli,config-conventional}
+
+> echo "module.exports = { extends: ['@commitlint/config-conventional'] }" > commitlint.config.js
+
+<br />
+
+* Husky
+> yarn add husky --dev
+
+> yarn husky install
+
+> npx husky add .husky/commit-msg  'npx --no -- commitlint --edit ${1}'
+
+
