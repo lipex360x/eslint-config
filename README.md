@@ -4,28 +4,37 @@
 
 #### Express and TypeORM
 
-> yarn add express typeorm typeorm-naming-strategies dotenv tsyringe reflect-metadata
+> yarn add express typeorm typeorm-naming-strategies dotenv tsyringe reflect-metadata rimraf
 
-> yarn add -D ts-node-dev typescript @types/express @types/node
+> yarn add -D ts-node-dev typescript tsconfig-paths @types/express @types/node
+
+file: `package.json`
+```json
+"scripts": {
+  "start:dev": "ts-node-dev -r tsconfig-paths/register src/server.ts",
+  "build": "tsup src --format esm,cjs --dts --out-dir .build",
+  "prebuild": "rimraf .dist"
+}
+```
 
 file: `tsconfig.json`
-```ts
+```json
 {
   "compilerOptions": {
-      "target": "ESNext",
-      "module": "commonjs",
-      "moduleResolution": "node",
-      "outDir": "./build",
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true,
-      "sourceMap": true,
-      "skipLibCheck": true,
-      "esModuleInterop": true,
-      "baseUrl": "./",
-      "paths": {
-        "@/*": ["./src/*"],
-        "@test/*": ["./test/*"]
-      }
+    "target": "ESNext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@test/*": ["./test/*"]
+    }
   }
 }
 ```
