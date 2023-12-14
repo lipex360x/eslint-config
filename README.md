@@ -38,3 +38,12 @@ file: `package.json`
 }
 
 ```
+
+Old version
+```
+"eslintConfig": {
+  "extends": [
+    "@lipex360-ui/eslint-config"
+  ]
+}
+```
