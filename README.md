@@ -44,6 +44,10 @@ file: `package.json`
 > npm i -D eslint eslint-plugin-prettier @lipex360-ui/eslint-config && code package.json
 
 ```
+"scripts": {
+  "lint": "npx eslint . --ext .ts,.tsx --fix",
+},
+
 "eslintConfig": {
   "extends": [
     "@lipex360-ui/eslint-config"
