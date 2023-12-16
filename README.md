@@ -39,7 +39,10 @@ file: `package.json`
 
 ```
 
-Old version
+#### Old version
+
+> npm i -D eslint eslint-plugin-prettier @lipex360-ui/eslint-config && code package.json
+
 ```
 "eslintConfig": {
   "extends": [
