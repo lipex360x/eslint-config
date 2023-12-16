@@ -45,7 +45,7 @@ file: `package.json`
 
 ```
 "scripts": {
-  "lint": "npx eslint . --ext .ts,.tsx --fix",
+  "lint": "npx eslint . --ext .ts,.tsx --fix"
 },
 
 "eslintConfig": {
